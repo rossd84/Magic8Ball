@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(107, 127, 156);
+}
+
+.input {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 30px;
+    font-family: 'Bangers', cursive;
+    font-size: 50px;
+    text-shadow: 3px 3px rgb(209, 209, 209);
+
+}
+
+input {
+    width: 800px;
+    font-size: 20px;
+    background-color: rgb(192, 190, 219);
+    border-radius: 5px;
+    
+}
+
+button {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border-right: 5px solid rgb(31, 31, 46);
+    border-bottom: 5px solid black;
+}
+
+button:active {
+    margin-left: 5px;
+    margin-top: 5px;
+    border: 0;
+}
+
+.ball-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 600px;
+    margin-top: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: inset 75px -75px 100px 175px rgba(0,0,0,.8), -75px 100px 75px 25px rgba(0,0,0,.8);
+    background-image: radial-gradient( rgb(167, 167, 167), rgb(0,0,0));  
+}
+
+.ball-window {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: black;
+    border: 10px solid rgb(29, 29, 29);
+    box-shadow: 0 0 10px 10px black;
+    overflow: hidden;
+    font-family: 'IM Fell English SC', serif;
+}
+
+.answer-triangle {
+    position: relative;
+    top: 80px;
+    left: 25px;
+    width: 0;
+    height: 0;
+	border-bottom: 150px solid transparent;
+	border-top: 150px solid rgb(0, 98, 255);
+	border-right: 100px solid transparent ; 
+	border-left: 100px solid  transparent;
+}
+
+.triangle-top {
+    position: relative;
+    top: -235px;
+    left: 25px;
+    width: 200px;
+}
+
+.triangle-left {
+    position: relative;
+    top: -180px;
+    left: -15px;
+    transform: rotate(-124deg);
+    width: 175px;
+}
+
+.triangle-right {
+    position: relative;
+    top: -205px;
+    left: 90px;
+    transform: rotate(124deg);
+    width: 175px;
+}
+
+.triangle-outside {
+    background-image: linear-gradient( rgba(0, 98, 255, .7), transparent);
+    box-shadow: 0 -10px 10px 5px rgba(0, 98, 255, .7);
+    height:10%;
+}
+
+.triangle-text {
+    position: relative;
+    left: 125px;
+    top: -255px;
+    width: 70%;
+    /* border: 1px solid red; */
+    transform: translate(-50%, -50%);
+    color: rgb(255, 251, 197);
+    font-size: 22px;
+    text-align: center;   
+}
+
